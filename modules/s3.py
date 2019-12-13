@@ -1,7 +1,7 @@
 import boto3
 
 from collections import defaultdict
-from colors import bcolors
+from modules.colors import bcolors
 
 class S3Analyzer():
     def __init__(self):
