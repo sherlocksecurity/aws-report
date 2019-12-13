@@ -1,7 +1,7 @@
 import boto3
 
-from config import CONFIG
-from colors import bcolors
+from modules.config import CONFIG
+from modules.colors import bcolors
 from datetime import datetime, timezone
 
 class IamAnalyzer():
