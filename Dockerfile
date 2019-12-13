@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./aws-report.py" ]
+ENTRYPOINT [ "python", "./aws_report.py" ]
