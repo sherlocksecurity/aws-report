@@ -1,1 +1,38 @@
-# aws-report
+<p align="center">
+  <h3 align="center">AWS Report</h3>
+  <p align="center">AWS report is a tool to perform security preemptive analysis.</p>
+
+  <p align="center">
+    <a href="https://twitter.com/gmdutrax">
+      <img src="https://img.shields.io/badge/twitter-@gmdutrax-blue.svg">
+    </a>
+    <!--
+    <a href="https://travis-ci.org/gmdutra/aws-report">
+      <img src="https://travis-ci.org/gmdutra/aws-report.svg?branch=master">
+    </a>
+    -->
+    <a href="https://www.gnu.org/licenses/gpl-3.0">
+      <img src="https://img.shields.io/badge/License-GPLv3-blue.svg">
+    </a>
+  </p>
+</p>
+
+<hr>
+
+# Install requirements
+```
+pip3 install -U -r requirements.txt
+```
+
+# Enviroment variables
+
+```
+IAM_MAX_ACCESS_KEY_AGE default is 60 days.
+```
+
+# Examples
+
+```
+python3 aws_report.py --s3
+python3 aws_report.py --iam
+```
