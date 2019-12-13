@@ -24,5 +24,5 @@ class IamAnalyzer():
             verify_date = str(current_date - create_date).split(' ')[0]
 
             if int(verify_date) > CONFIG.iam_max_access_key_age:
-                print("{0}[WARNING]{1}User {2} created more than {3} days ago"\
+                print("{0}[WARNING]{1} User {2} created more than {3} days ago"\
                         .format(bcolors.FAIL, bcolors.ENDC, user, verify_date))
