@@ -44,7 +44,7 @@ docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-
 ### Contact
 
 ```
-[+]Email: gmdutra.eu@gmail.com
-[+]Linkedin: linkedin.com/in/gmdutra
-[+]Twitter: twitter.com/gmdutrax
+[+]Email     gmdutra.eu@gmail.com
+[+]Linkedin  linkedin.com/in/gmdutra
+[+]Twitter   twitter.com/gmdutrax
 ```
