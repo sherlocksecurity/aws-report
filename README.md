@@ -17,25 +17,25 @@
 
 <hr>
 
-# Install requirements
+### Install requirements
 ```
 pip3 install -U -r requirements.txt
 ```
 
-# Enviroment variables
+### Enviroment variables
 
 ```
 IAM_MAX_ACCESS_KEY_AGE default is 60 days.
 ```
 
-# Examples
+### Examples
 
 ```
 python3 aws_report.py --s3
 python3 aws_report.py --iam
 ```
 
-# Running in Docker
+### Running in Docker
 
 ```
 docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-secret-key gmdutra/aws-report --s3
