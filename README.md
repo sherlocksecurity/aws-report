@@ -6,11 +6,9 @@
     <a href="https://twitter.com/gmdutrax">
       <img src="https://img.shields.io/badge/twitter-@gmdutrax-blue.svg">
     </a>
-    <!--
     <a href="https://travis-ci.org/gmdutra/aws-report">
       <img src="https://travis-ci.org/gmdutra/aws-report.svg?branch=master">
     </a>
-    -->
     <a href="https://www.gnu.org/licenses/gpl-3.0">
       <img src="https://img.shields.io/badge/License-GPLv3-blue.svg">
     </a>
