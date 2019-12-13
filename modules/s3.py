@@ -21,7 +21,7 @@ class S3Analyzer():
             public, grants = self.verify_acl(acl)
 
             if public:
-                print("{0}[WARNING]{1}: Bucket {2} is public!".format(bcolors.FAIL, bcolors.ENDC, bucket.name))
+                print("{0}[WARNING]{1} Bucket {2} is public!".format(bcolors.FAIL, bcolors.ENDC, bucket.name))
 
     def verify_acl(self, acl):
         dangerous = defaultdict(list)
@@ -30,10 +30,10 @@ class S3Analyzer():
             grantee = grant["Grantee"]
             if grantee["Type"] == "Group" and grantee["URI"] in self.groups:
                 dangerous[grantee["URI"]].append(grant["Permission"])
-        
+
         if dangerous:
             public = True
-        else: 
+        else:
             public = False
 
         return public, dangerous

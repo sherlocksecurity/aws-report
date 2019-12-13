@@ -13,7 +13,7 @@ class IamAnalyzer():
         response = self.iam_client.list_users()
         for user in response['Users']:
             self.users.append(user['UserName'])
-    
+
     def find_max_access_key_age(self):
         self.find_users()
 
@@ -24,5 +24,5 @@ class IamAnalyzer():
             verify_date = str(current_date - create_date).split(' ')[0]
 
             if int(verify_date) > CONFIG.iam_max_access_key_age:
-                print("{0}[WARNING]{1}User: {2} created more than {3} days ago"\
+                print("{0}[WARNING]{1}User {2} created more than {3} days ago"\
                         .format(bcolors.FAIL, bcolors.ENDC, user, verify_date))
