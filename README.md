@@ -17,7 +17,7 @@
 
 <hr>
 
-[![asciicast](https://asciinema.org/a/SviEsPkf4Oxr4HkGFAV3Vkjh9.svg)](https://asciinema.org/a/SviEsPkf4Oxr4HkGFAV3Vkjh9)
+[![asciicast](https://asciinema.org/a/H2kIjGRo4GvvdRXDZ41DoFXRn.svg)](https://asciinema.org/a/H2kIjGRo4GvvdRXDZ41DoFXRn)
 
 ### Features
 
