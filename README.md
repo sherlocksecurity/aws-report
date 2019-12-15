@@ -26,6 +26,7 @@
 * Search security group with inbound rule for 0.0.0.0/0
 * Search elastic ip dissociated
 * Search volumes available
+* Search AMIs with permission public
 
 ### Install requirements
 ```
