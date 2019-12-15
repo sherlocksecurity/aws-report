@@ -19,6 +19,14 @@
 
 [![asciicast](https://asciinema.org/a/SviEsPkf4Oxr4HkGFAV3Vkjh9.svg)](https://asciinema.org/a/SviEsPkf4Oxr4HkGFAV3Vkjh9)
 
+### Features
+
+* Search iam users based on creation date
+* Search buckets public
+* Search security group with inbound rule for 0.0.0.0/0
+* Search elastic ip dissociated
+* Search volumes available
+
 ### Install requirements
 ```
 pip3 install -U -r requirements.txt
