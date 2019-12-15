@@ -6,6 +6,7 @@ from modules.securitygroups import SgAnalyzer
 from modules.elasticip import ElasticIpAnalyzer
 from modules.volumes import VolumesAnalyzer
 from modules.ami import AmiAnalyzer
+from modules.igw import IgwAnalyzer
 from modules.banner import Banner
 
 @click.command()
@@ -16,8 +17,9 @@ from modules.banner import Banner
 @click.option('--volumes', is_flag=True, help="Search volumes available")
 @click.option('--ami', is_flag=True, help="Search AMIs with permission public")
 @click.option('--owner', multiple=True, default='', help="Defines the owner of the resources to be found")
+@click.option('--igw', is_flag=True, help="Search internet gateways detached")
 
-def main(s3, iam, sg, elasticip, volumes, ami, owner):
+def main(s3, iam, sg, elasticip, volumes, ami, owner, igw):
 
     if s3:
         s3 = S3Analyzer()
@@ -47,6 +49,10 @@ def main(s3, iam, sg, elasticip, volumes, ami, owner):
 
         ami = AmiAnalyzer(owners)
         ami.find_public_ami()
+
+    elif igw:
+        igw = IgwAnalyzer()
+        igw.find_igw_detached()
 
 if __name__=='__main__':
     print(Banner.banner)
