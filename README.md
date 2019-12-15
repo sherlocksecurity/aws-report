@@ -27,6 +27,7 @@
 * Search elastic ip dissociated
 * Search volumes available
 * Search AMIs with permission public
+* Search internet gateways detached
 
 ### Install requirements
 ```
@@ -52,6 +53,7 @@ Options:
   --volumes     Search volumes available
   --ami         Search AMIs with permission public
   --owner TEXT  Defines the owner of the resources to be found
+  --igw         Search internet gateways detached
   --help        Show this message and exit.
 ```
 
