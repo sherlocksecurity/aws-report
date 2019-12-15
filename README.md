@@ -51,6 +51,18 @@ python3 aws_report.py --iam
 docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-secret-key gmdutra/aws-report --s3
 ```
 
+### Options
+
+```
+Options:
+  --s3         Search buckets public in s3
+  --iam        Search iam users based on creation date
+  --sg         Search security groups with inbound rule 0.0.0.0
+  --elasticip  Search elastic IP not associated
+  --volumes    Search volumes available
+  --help       Show this message and exit.
+```
+
 ### Contact
 
 ```
