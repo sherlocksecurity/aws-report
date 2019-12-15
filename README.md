@@ -38,16 +38,20 @@ pip3 install -U -r requirements.txt
 IAM_MAX_ACCESS_KEY_AGE default is 60 days.
 ```
 
-### Options
+### Usage
 
 ```
+Usage: aws_report.py [OPTIONS]
+
 Options:
-  --s3         Search buckets public in s3
-  --iam        Search iam users based on creation date
-  --sg         Search security groups with inbound rule 0.0.0.0
-  --elasticip  Search elastic IP not associated
-  --volumes    Search volumes available
-  --help       Show this message and exit.
+  --s3          Search buckets public in s3
+  --iam         Search iam users based on creation date
+  --sg          Search security groups with inbound rule 0.0.0.0
+  --elasticip   Search elastic IP not associated
+  --volumes     Search volumes available
+  --ami         Search AMIs with permission public
+  --owner TEXT  Defines the owner of the resources to be found
+  --help        Show this message and exit.
 ```
 
 ### Examples
