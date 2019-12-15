@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">AWS Report</h3>
-  <p align="center">AWS report is a tool to perform security preemptive analysis.</p>
+  <p align="center">AWS Report is a tool for analyzing amazon resources.</p>
 
   <p align="center">
     <a href="https://twitter.com/gmdutrax">
