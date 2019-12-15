@@ -38,19 +38,6 @@ pip3 install -U -r requirements.txt
 IAM_MAX_ACCESS_KEY_AGE default is 60 days.
 ```
 
-### Examples
-
-```
-python3 aws_report.py --s3
-python3 aws_report.py --iam
-```
-
-### Running in Docker
-
-```
-docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-secret-key gmdutra/aws-report --s3
-```
-
 ### Options
 
 ```
@@ -61,6 +48,20 @@ Options:
   --elasticip  Search elastic IP not associated
   --volumes    Search volumes available
   --help       Show this message and exit.
+```
+
+### Examples
+
+```
+python3 aws_report.py --s3
+python3 aws_report.py --iam
+python3 aws_report.py --owner 296193067842 --ami
+```
+
+### Running in Docker
+
+```
+docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-secret-key gmdutra/aws-report --s3
 ```
 
 ### Contact
