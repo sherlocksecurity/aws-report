@@ -71,10 +71,3 @@ python3 aws_report.py --owner 296193067842 --ami
 docker run -it -e AWS_ACCESS_KEY_ID=you-access-key -e AWS_SECRET_ACCESS_KEY=you-secret-key gmdutra/aws-report --s3
 ```
 
-### Contact
-
-```
-[+]Email     gmdutra.eu@gmail.com
-[+]Linkedin  linkedin.com/in/gmdutra
-[+]Twitter   twitter.com/gmdutrax
-```
